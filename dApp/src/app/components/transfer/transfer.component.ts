@@ -16,7 +16,7 @@ export class TransferComponent implements OnInit {
   public balance!: number;
   public type: string = "ETH"
 
-  public transferTo = '0x5122F7f2caF697fAAd52b7f183FB8B9b13A3061f' //2° Ganache account
+  public transferTo = '' //2° Ganache account
   public amount = 0;
   public remarks = '';
   public disabled = false;

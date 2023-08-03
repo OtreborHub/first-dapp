@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
   constructor(private accountSrv : AccountService, private cs : ContractService, private router : Router){}
   
   currentPage!: string;
-  logFirstError:string = "E' necessario connettersi con il proprio wallet, per poter utilizzare questa funzione"
+  activePage : number = 0;
+  logFirstError:string = "E' necessario connettersi con il proprio wallet, per poter utilizzare questa funzione";
 
   ngOnInit(): void {
 
@@ -29,28 +30,32 @@ export class HeaderComponent implements OnInit {
       Swal.fire("Attenzione!", Constants.LOGMISSING_ERROR, "warning");
     }else{
       this.router.navigate([Constants.TRANSFER_PATH]);
+      this.activePage = 1;
+      
     }
   }
-
+  
   mint(){
     if(this.accountSrv.checkUndefinedAccount(false)){
       Swal.fire("Attenzione!", Constants.LOGMISSING_ERROR, "warning");
     }else{
       this.router.navigate([Constants.MINT_PATH]);
-      
+      this.activePage = 2;
     } 
   }
-
+  
   nft(){
     if(this.accountSrv.checkUndefinedAccount(false)){
       Swal.fire("Attenzione!", Constants.LOGMISSING_ERROR, "warning");
     }else{
       this.router.navigate([Constants.NFT_PATH]);
+      this.activePage = 3;
     } 
   }
   
   goHome(){
     this.router.navigate([Constants.HOME_PATH]);
+    this.activePage = 0;
   }
 
 

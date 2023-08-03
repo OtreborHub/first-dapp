@@ -4,7 +4,7 @@
     <form>
         <span><label for="transfer"><b>Trasferisci a</b></label><button class="donation-btn right" (click)="deposit()">
                 Dona </button></span>
-        <input id="in_transferTo" type="text" [disabled]="disabled" class="inputfield" placeholder="Tranfer To"
+        <input id="in_transferTo" type="text" [disabled]="disabled" class="inputfield" placeholder="Tranfer To 0x.."
             [(ngModel)]="transferTo" name="tranferTo" required>
         <label for="amount"><b>Quantità in Ether</b></label>
         <input type="text" class="inputfield" placeholder="Enter Amount" [(ngModel)]="amount" name="amount" required>

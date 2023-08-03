@@ -16,7 +16,7 @@ export class TokenComponent implements OnInit {
   
   amountMint!: number;
   amountTransfer!: number;
-  toTransfer: string = "0x5122F7f2caF697fAAd52b7f183FB8B9b13A3061f";
+  toTransfer: string = '';
   mintedToken!: number;
 
   address!: string;
