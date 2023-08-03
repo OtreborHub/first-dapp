@@ -1,0 +1,6 @@
+smartcontracts/node_modules/*
+smartcontracts/build/*
+smartcontracts/package-lock.json
+smartcontracts/test/.gitkeep
+smartcontracts/package.json
+.vscode/settings.json

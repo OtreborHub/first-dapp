@@ -1,0 +1,17 @@
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: 	#92c1ec;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width :100%
+}
+.tab b {
+    padding-right: 16px;
+}
+.tab span{
+  float: right;
+}

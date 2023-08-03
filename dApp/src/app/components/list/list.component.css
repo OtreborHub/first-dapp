@@ -1,0 +1,20 @@
+.container{
+    margin-top:2rem;
+}
+.btn-outline-dark{
+    width: 100%;
+}
+
+.headerEl {
+    color:  #92c1ec !important;
+}
+
+.detailBut{
+    color: #92c1ec;
+    border-color: #92c1ec;
+}
+
+.detailBut:hover {
+    color: white;
+    background-color: #92c1ec;
+}

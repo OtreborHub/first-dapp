@@ -1,0 +1,35 @@
+.container {
+    margin-top: 0.5rem;
+    border: 1px solid grey; 
+    padding: 1rem;
+}
+
+.w100 {
+    margin:1.2rem 0 1.2rem 0;
+    width: 100%;
+}
+
+h4{
+    color:#92c1ec
+}
+
+.cust_btn{
+    background-color: white;
+    color: #000;
+    padding: 14px 10px;
+    margin: 12px 10px;
+    border-radius:0.7rem;
+    border-color:#000;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+.cust_btn:hover{
+    background-color: #000;
+    color: #92c1ec;
+}
+
+.col-12{
+    text-align: center;
+}

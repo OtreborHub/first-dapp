@@ -1,0 +1,27 @@
+<div class="container">
+  <div *ngIf="resources.length > 0" class="container">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr class="header">
+          <th scope="col" class="headerEl">ID</th>
+          <th scope="col" class="headerEl">Nome</th>
+          <th scope="col" class="headerEl">Contenuto</th>
+          <th scope="col" class="headerEl">Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let resource of resources">
+          <th scope="row">{{resource.id}}</th>
+          <td>{{resource.name}}</td>
+          <td>{{resource.content}}</td>
+          <td><button class="btn btn-outline-primary detailBut"> Dettaglio > </button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button class="btn btn-outline-dark" (click)="back()"> Indietro </button>
+</div>
+<div class="container">
+  
+
+</div>

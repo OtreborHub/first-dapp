@@ -1,0 +1,9 @@
+  <div class="top-cont container">
+    <p> Click the button below to see Infura Block number </p>
+    <span><button type="button" class="btn btn-outline-success" (click)="getBlockNumber()">READ BLOCK N</button>
+      <a style="margin-left:1rem" *ngIf="blockNumberPresent">{{blockNumber}}</a>
+    </span>
+  </div>
+
+  <app-create></app-create>
+  <app-read></app-read>

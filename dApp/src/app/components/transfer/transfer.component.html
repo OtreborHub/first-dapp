@@ -1,0 +1,20 @@
+<div class="container">
+    <section-header [balance]=balance [address]=address [type]=type>
+    </section-header>
+    <form>
+        <span><label for="transfer"><b>Trasferisci a</b></label><button class="donation-btn right" (click)="deposit()">
+                Dona </button></span>
+        <input id="in_transferTo" type="text" [disabled]="disabled" class="inputfield" placeholder="Tranfer To"
+            [(ngModel)]="transferTo" name="tranferTo" required>
+        <label for="amount"><b>Quantità in Ether</b></label>
+        <input type="text" class="inputfield" placeholder="Enter Amount" [(ngModel)]="amount" name="amount" required>
+
+        <label for="remarts"><b>Note</b></label>
+        <textarea class="inputfield" placeholder="Appunti qui..." name="remarks" required
+            [(ngModel)]="remarks"></textarea>
+        <hr>
+        <button type="reset" class="cust_btn resetbtn">Reset</button>&nbsp;&nbsp;
+        <button type="submit" class="cust_btn" (click)="transferEther($event)">Transfer Ether</button>&nbsp;&nbsp;
+        <button class="cust_btn left" (click)="back()">Indietro</button>&nbsp;&nbsp;
+    </form>
+</div>

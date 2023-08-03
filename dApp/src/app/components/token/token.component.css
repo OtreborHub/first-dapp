@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.row{
+    align-items: center
+}
+
+.cust_btn{
+    background-color: white;
+    color: #92c1ec;
+    padding: 10px 4px;
+    border-radius:0.5rem;
+    border-color:black;
+    width: 100%;
+}
+
+.cust_btn:hover{
+    background-color: black;
+}
+
+.end {
+    align-self: self-end;
+}
+
+h4{
+    margin-top: 1rem;
+}
+
+.inTxBtn{
+    display: flex;
+}
+
+.left{
+    text-align: left;
+}
+
+.amountmint{
+    width: 30%;
+}
+
+.cleanbtn{
+    background-color: #343a40;
+    color: #92c1ec;
+    border-radius:0.2rem;
+    border-color:grey;
+}
+
+.cleanbtn:hover{
+    background-color: black;
+    
+}

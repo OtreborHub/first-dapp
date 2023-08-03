@@ -1,0 +1,31 @@
+<div class="container">
+    <h4 class="sectionTitle"> Ricerca Risorse </h4>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="nameSearch">Inserisci il nome della risorsa che stai cercando</label>
+                <input [(ngModel)]="nameSearch" class="form-control" name="titleSearch" type="text"
+                    aria-describedby="searchHelp" placeholder="Title here...">
+                <small id="searchHelp" class="form-text text-muted">Come si chiama la risorsa che cerchi?</small>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="idSearch">Inserisci l'ID della risorsa che stai cercando</label>
+                <input [(ngModel)]="idSearch" class="form-control" name="idSearch" type="number"
+                    aria-describedby="searchidHelp" placeholder="ID here...">
+                <small id="searchidHelp" class="form-text text-muted">o conosci il suo ID?</small>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" (click)="recupera()" class="cust_btn">Recupera risorsa</button>
+        </div>
+    </div>
+    <!-- <div *ngIf="results != null" class="row">
+        <label for="viewList">Results: {{results.length}}</label>
+        <button class="btn btn-primary"></button>
+    </div> -->
+
+</div>

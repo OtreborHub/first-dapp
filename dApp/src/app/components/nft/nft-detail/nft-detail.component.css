@@ -1,0 +1,25 @@
+.row{
+    align-items: center
+}
+
+.cust_btn{
+    background-color: black;
+    color: #92c1ec;
+    padding: 10px 4px;
+    border-radius:0.5rem;
+    border-color:#000;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.cust_btn:hover{
+    opacity: 1;
+}
+
+.inTxBtn{
+    display: flex;
+}
+
+.w50{
+    width: 50%;
+}

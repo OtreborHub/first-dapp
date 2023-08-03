@@ -1,0 +1,26 @@
+<div class="container">
+    <h4 class="sectionTitle"> Creazione Risorsa </h4>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label for="nameCreate">Nome</label>
+                <input [(ngModel)]="nameCreate" class="form-control" name="name" type="text" aria-describedby="nameHelp"
+                    placeholder="Resource name here..." required>
+                <small id="nameHelp" class="form-text text-muted">Come si chiama la tua risorsa?</small>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="contentCreate">Contenuto</label>
+                <input [(ngModel)]="contentCreate" class="form-control" name="content" type="text"
+                    aria-describedby="contentHelp" placeholder="and Content here..." required>
+                <small id="contentHelp" class="form-text text-muted">Come è fatta?</small>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="submit" class="cust_btn w100" (click)="crea()">Crea Risorsa</button>
+        </div>
+    </div>
+</div>

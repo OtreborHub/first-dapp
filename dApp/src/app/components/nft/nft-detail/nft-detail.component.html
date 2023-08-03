@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-6">
+                <img class="w50" src='{{url}}' alt="No Image Content">
+            </div>
+            <div class="col-6">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>{{name}}</h5>
+                            </div>
+                            <div class="col-12">
+                                <a>{{content}}</a>
+                            </div>
+                            <div class="col-12">
+                                <a>owned by: {{account}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="inTxBtn input-group">
+                                <input type="text" class="form-control" placeholder="Transfer to address 0x..." [(ngModel)]="transferTo" name="transferTo" describedby="buttonX">
+                                <div class="input-group-append">
+                                    <button type="button" class="cleanbtn" id="buttonX" (click)="clean()">X</button>
+                                </div>
+                            </div>
+                            <br>
+                            <button (click)="transfer()" class="cust_btn"> Trasferisci </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
