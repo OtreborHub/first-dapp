@@ -1,13 +1,13 @@
 ## Getting Started
 
 Scaricare i progetti sotto la stessa cartella.
-Aprire con VSCode la cartella padre (smart-contracts)										
+Aprire con VSCode la cartella padre (first-dapp)										
 
 Da VSCode creare 2 istanze del terminale:
 
-Uno dalla cartella smart-contracs/dApwp **(Terminale dApp - front end Angular)**
+Uno dalla cartella first-dapp/dApp **(Terminale dApp - front end Angular)**
 
-e un altro dalla cartella smart-contracts/smartcontracts **(Terminale smartcontracs - backend Solidity)**
+e un altro dalla cartella first-dapp/smartcontracts **(Terminale smartcontracs - backend Solidity)**
 
 **dApp**
 
@@ -39,16 +39,17 @@ impostiamo:
 
 queste informazioni devono combaciare con quelle presenti nel file smartcontracts\truffle-config.js
 
-effettuare la prima build  e il primo deploy dello smart contract dal Terminale smartcontracts
+Dopo aver scritto i contratti, effettuare la prima build e il primo deploy dello smart contract dal Terminale smartcontracts.
+Supponiamo di aver creato un solo contratto chiamato TestContract.sol
 
 eseguiamo:
 
 	- truffle compile
 
-	- truffle migrate (sarà necessario aggiungere --reset per i prossimi deploy
+	- truffle migrate (--reset per i deploy successivi al primo)
 	
-A seguito dell'operazione di compile vedremo comparire la cartella build/contracts. Quelli sono i nostri contratti buildati. 
-Dal TestContract.json, copiamo l'**abi**.
+A seguito dell'operazione di compile vedremo comparire la cartella build/contracts. 
+Al suo interno sono presenti i nostri contratti buildati in formato json. Dal TestContract.json, copiamo l'**abi**.
 
 Dopo il deploy Ganache ci mostrerà nella sezione Contracts i dettagli dei contratti deployati. Copiamo l'**address** di TestContract. 
 
